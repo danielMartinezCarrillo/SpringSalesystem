@@ -22,14 +22,33 @@
 		<div class="collapse navbar-collapse" id="bs-nav-demo">
 			<ul class="nav navbar-nav">
 
-				<li><a href="Nosotros">Nosotros</a></li>
-				<li><a href="Contactar">Contactar</a></li>
-				<li><a href="APP">Nuestra App</a></li>
+				<div class="navbar">
+
+					<div class="dropdown">
+					  <button class="dropbtn">Productos
+						<i class="fa fa-caret-down"></i>
+					  </button>
+					  <div class="dropdown-content">
+						<a href="HealthyFIT">HealthyFIT</a>
+						<a href="HealthyMEXICAN">HealthyMEXICAN</a>
+						<a href="HealthyMAX">HealthyMAX</a>
+					  </div>
+					</div>
+				  </div>
+
+				  
+
+				<li><a href="AboutUs">Nosotros</a></li>
+				<li><a href="ContactUs">Contactar</a></li>
+				<li><a href="OurApp">Nuestra App</a></li>
+				<li><a href="Tineda">Tineda</a></li>
 			</ul>
+
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="Login">Log in</a></li>
+				<li><a href="Login">Log in / Sign up</a></li>
 				<li><a href="https://www.facebook.com/HealthyMix-2639600869447381/" class="fa fa-facebook"></a></li>
 				<li><a href="https://www.instagram.com/mixhealthy/" class="fa fa-instagram"></a></li>
+				<i class="far fa-shopping-cart"></i>
 			</ul>
 	</div>
 		</div>
@@ -50,7 +69,7 @@
 		<div class="thumbnail">
 			<div class="containerbutton">
 		<img src="/images/Chocolate.jpg" alt="Avatar" class="image" style="width:100%"> 
-		<button onclick="window.location.href='HealthyFIT'" class="button" class="middle" style="vertical-align:middle"><span>Ver recetas </span></button>
+		<button onclick="window.location.href='HealthyFIT'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
 	</div>
 		</div>
 	</div>
@@ -59,7 +78,7 @@
 		<div class="thumbnail">
 			<div class="containerbutton">
 		<img src="/images/Spicy.jpg" alt="Avatar" class="image" style="width:100%">
-		<button onclick="window.location.href='HealthyMEXICAN'" class="button" class="middle" style="vertical-align:middle"><span>Ver recetas </span></button>
+		<button onclick="window.location.href='HealthyMEXICAN'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
 	</div>
 		</div>
 	</div>
@@ -68,7 +87,7 @@
 		<div class="thumbnail">
 			<div class="containerbutton">
 	<img src="/images/Natural.jpg"alt="Avatar" class="image" style="width:100%">
-		<button onclick="window.location.href='HealthyMAX'" class="button" class="middle" style="vertical-align:middle"><span>Ver recetas </span></button>
+		<button onclick="window.location.href='HealthyMAX'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
 	</div>
 		</div>
 	</div>

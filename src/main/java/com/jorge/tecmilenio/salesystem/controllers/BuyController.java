@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value = "")
-public class HealthyMAXController {
+public class BuyController {
 
-@RequestMapping(value = "/HealthyMAX", method = RequestMethod.GET)
-public String HealthyMAX() {
-    return "/HealthyMAX";
+@RequestMapping(value = "/Buy", method = RequestMethod.GET)
+public String Buy() {
+    return "/Buy";
 }
 
 }

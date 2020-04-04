@@ -74,6 +74,13 @@ input[type=submit]:hover {
   height: 300px; /* Some height */
 }
 
+.image-containerAPP {
+  background-image: url("https://emerging-europe.com/wp-content/uploads/2018/11/bigstock-abstract-technology-background-250119211.jpg"); /* The image used - important! */
+  background-size: cover; 
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 300px; /* Some height */
+}
+
 .textTitle {
   background-color: white;
   color: black;

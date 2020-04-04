@@ -7,10 +7,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/products")
-public class ProductosController {
+@RequestMapping(value = "")
+public class ProductsController {
 
-@RequestMapping(value = "", method = RequestMethod.GET)
+@RequestMapping(value = "/HealthyFIT", method = RequestMethod.GET)
+public String HealthyFIT() {
+    return "/HealthyFIT";
+}
+
+@RequestMapping(value = "/HealthyMAX", method = RequestMethod.GET)
+public String HealthyMAX() {
+    return "/HealthyMAX";
+}
+
+@RequestMapping(value = "/HealthyMEXICAN", method = RequestMethod.GET)
+public String HealthyMEXICAN() {
+    return "/HealthyMEXICAN";
+}
+
+/*@RequestMapping(value = "", method = RequestMethod.GET)
 public String index() {
     return "products/index";
 }
@@ -29,6 +44,12 @@ public String show(
 @RequestMapping(value = "/search", method = RequestMethod.GET)
 public String search() {
     return "products/search";
-}
+}*/
 
 }
+
+/*
+@Controller
+@RequestMapping(value = "/products") El estribir el valor /products permitirá que la dirección sea a partir de /products, por ejemplo /products/HealthyMAX
+public class ProductsController {
+}*/

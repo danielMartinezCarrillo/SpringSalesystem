@@ -26,11 +26,12 @@
 		<div class="collapse navbar-collapse" id="bs-nav-demo">
 			<ul class="nav navbar-nav">
 
-				<li><a href="Nosotros.html">Nosotros</a></li>
-				<li><a href="Contactar.html">Contactar</a></li>
-				<li><a href="#">Tienda</a></li>
+				<li><a href="AboutUs">Nosotros</a></li>
+				<li><a href="ContactUs">Contactar</a></li>
+				<li><a href="OurApp">Nuestra App</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="Login">Log in / Sign up</a></li>
 				<li><a href="https://www.facebook.com/HealthyMix-2639600869447381/" class="fa fa-facebook"></a></li>
 				<li><a href="https://www.instagram.com/mixhealthy/" class="fa fa-instagram"></a></li>
 			</ul>

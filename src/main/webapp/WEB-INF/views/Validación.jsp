@@ -12,7 +12,7 @@
 <body>
 
     <form action="Login" class="login-form">
-        <h1>Verificar correo electrónico</h1>
+        <h1>Verificar correo electronico</h1>
 
         <div class="txtb">
             <input type="text">

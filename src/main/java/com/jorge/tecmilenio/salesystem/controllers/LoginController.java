@@ -13,4 +13,19 @@ public String Login() {
     return "/Login";
 }
 
+@RequestMapping(value = "/Signup", method = RequestMethod.GET)
+public String Signup() {
+    return "/Signup";
+}
+
+@RequestMapping(value = "/ForgotPassword", method = RequestMethod.GET)
+public String ForgotPassword() {
+    return "/ForgotPassword";
+}
+
+@RequestMapping(value = "/RecoveryAccount", method = RequestMethod.GET)
+public String RecoveryAccount() {
+    return "/RecoveryAccount";
+}
+
 }
