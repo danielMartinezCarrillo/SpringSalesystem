@@ -23,4 +23,9 @@ public String OurApp() {
     return "/OurApp";
 }
 
+@RequestMapping(value = "/Profile", method = RequestMethod.GET)
+public String Profile() {
+    return "/Profile";
+}
+
 }

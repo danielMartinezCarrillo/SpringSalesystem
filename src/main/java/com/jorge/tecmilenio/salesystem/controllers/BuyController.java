@@ -13,4 +13,9 @@ public String Buy() {
     return "/Buy";
 }
 
+@RequestMapping(value = "/Cart", method = RequestMethod.GET)
+public String Cart() {
+    return "/Cart";
+}
+
 }

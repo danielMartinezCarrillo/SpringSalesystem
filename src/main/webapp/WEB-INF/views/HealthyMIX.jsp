@@ -4,6 +4,7 @@
 	<title>HealthyMIX</title>
 	<link rel= "stylesheet" type= "text/css" href="/css/bootstrap.css">
 	<link rel= "stylesheet" type="text/css" href="/css/HealthyStyles.css">
+	<link rel= "stylesheet" type="text/css" href="/css/cart.css">
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -36,8 +37,6 @@
 					</div>
 				  </div>
 
-				  
-
 				<li><a href="AboutUs">Nosotros</a></li>
 				<li><a href="ContactUs">Contactar</a></li>
 				<li><a href="OurApp">Nuestra App</a></li>
@@ -49,6 +48,8 @@
 				<li><a href="https://www.facebook.com/HealthyMix-2639600869447381/" class="fa fa-facebook"></a></li>
 				<li><a href="https://www.instagram.com/mixhealthy/" class="fa fa-instagram"></a></li>
 				<i class="far fa-shopping-cart"></i>
+				<li><a href="Profile">Perfil</a></li>
+				<li><a href="Cart">Carrito</a></li>
 			</ul>
 	</div>
 		</div>
@@ -63,13 +64,13 @@
 </div>
 <div class="container">
 
-<div class="row"> 
+<div class="row">
 	<div class="col-lg-4">
 		<h3 class="subtitles"><b> HealthyFIT</b></h3>
 		<div class="thumbnail">
 			<div class="containerbutton">
-		<img src="/images/Chocolate.jpg" alt="Avatar" class="image" style="width:100%"> 
-		<button onclick="window.location.href='HealthyFIT'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
+		<img src="/images/Chocolate.jpg" alt="Avatar" class="image" style="width:100%">
+		<button onclick="window.location.href='HealthyFIT'" class="button" class="middle" style="vertical-align:middle"><span>Informacion </span></button>
 	</div>
 		</div>
 	</div>
@@ -78,7 +79,7 @@
 		<div class="thumbnail">
 			<div class="containerbutton">
 		<img src="/images/Spicy.jpg" alt="Avatar" class="image" style="width:100%">
-		<button onclick="window.location.href='HealthyMEXICAN'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
+		<button onclick="window.location.href='HealthyMEXICAN'" class="button" class="middle" style="vertical-align:middle"><span>Informacion </span></button>
 	</div>
 		</div>
 	</div>
@@ -87,21 +88,139 @@
 		<div class="thumbnail">
 			<div class="containerbutton">
 	<img src="/images/Natural.jpg"alt="Avatar" class="image" style="width:100%">
-		<button onclick="window.location.href='HealthyMAX'" class="button" class="middle" style="vertical-align:middle"><span>Información </span></button>
+		<button onclick="window.location.href='HealthyMAX'" class="button" class="middle" style="vertical-align:middle"><span>Informacion </span></button>
 	</div>
 		</div>
 	</div>
 </div>
 </div>
 
-<nav class="navbar1 navbar1-inverse">
+<!--<nav class="navbar1 navbar1-inverse">
 	<div class= "container">
 		<footer>
 			<p style="text-align: center;">HealthyMIX 2020 | Contact information: <a href=""> healthymix@outlook.com</a></p>
 		  </footer>
 		</div>
-	</nav>
+	</nav>-->
 
+	<!-- Footer -->
+	
 
 </body>
+
+<br>
+	<br>
+	<br>
+	<br>
+<footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    HealthyMIX es una empresa dedicada a la sana alimentacion, enfocada en una botana deliciosa y saludable apto para todo publico.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Informacion</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="HealthyMIX">Link 1</a></li>
+                    <li><a href="AboutUs">Link 2</a></li>
+                    <li><a href="ContactUs">Link 3</a></li>
+                    <li><a href="Shop">Link 4</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h5>Productos</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><a href="HealthyFIT">HealthyMIX FIT</a></li>
+                    <li><a href="HealthyMEXICAN.jsp">HealthyMIX MEXICAN</a></li>
+                    <li><a href="HealthyMAX.jsp">HealthyMIX MAX</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contacto</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> HealthyMIX</li>
+                    <li><i class="fa fa-envelope mr-2"></i> HealthyMIX@outlook.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+                    <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+                </ul>
+            </div>
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="text-right text-muted">HealthyMIX <i class="fa fa-heart"></i> by <a href="HealthyMIX"><i>HealthyMIX</i></a> | <span>v. 1.0</span></p>
+            </div>
+        </div>
+	</div>
+	
+	<style>
+		.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.reviews_product .fa-star {
+    color: gold;
+}
+.pagination {
+    margin-top: 20px;
+}
+footer {
+    background: #343a40;
+    padding: 40px;
+}
+footer a {
+    color: #f8f9fa!important
+}
+
+	</style>
+</footer>
 </html>

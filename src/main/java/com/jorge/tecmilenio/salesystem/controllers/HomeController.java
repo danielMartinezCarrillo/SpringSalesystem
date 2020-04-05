@@ -19,7 +19,7 @@ public class HomeController {
 @RequestMapping("/")
     public String HealthyMIX() {
 
-        Cliente cliente = new Cliente();
+        /*Cliente cliente = new Cliente();
         cliente.setNombreDelCliente("Antonio");
         cliente.setApellidoMaterno("Rios");
         cliente.setApellidoPaterno("Espinosa");
@@ -67,7 +67,7 @@ public class HomeController {
         session.save(ventas);
         session.getTransaction().commit();
         session.close();
-
+*/
         return "HealthyMIX";
     }
 
