@@ -1,3 +1,4 @@
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +22,8 @@
 
         <input type="submit" class="logbtn" value="Enviar"> <a href="Validation"></a>
 
-        <div class="bottom"></div>
-            HealthyMIX 2020
+        <div class="bottom" style="margin-top: 50px;"></div>
+            <p style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 13px;">HealthyMIX 2020</p>
         </div>
 
 </form>

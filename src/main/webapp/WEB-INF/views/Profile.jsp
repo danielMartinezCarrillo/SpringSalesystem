@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel= "stylesheet" type= "text/css" href="/css/profile.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel= "stylesheet" type= "text/css" href="/css/bootstrap.css">
+	<link rel= "stylesheet" type="text/css" href="/css/HealthyStyles.css">
+	<link rel= "stylesheet" type="text/css" href="/css/cart.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e8a013835b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	<div class= "container">
+		<div class="navbar-header"></div>
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+        <a href="/" class="navbar-brand">HealthyMIX</a>
+		<div class="collapse navbar-collapse" id="bs-nav-demo">
+			<ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class=“dropitems” class=“dropdown-item” href=“#” style="text-align: center;"> HealthyFIT</a>
+                        <a class=“dropitems” class=“dropdown-item” href=“#”> HealthyMEXICAN</a>
+                        <a class=“dropitems” class=“dropdown-item” href=“#”> HealthyMAX</a>
+                    </div>
+                </li>
+                <li><a href="Shop">Tienda</a></li>
+                <li><a href="OurApp">Nuestra App</a></li>
+                <li><a href="AboutUs">Nosotros</a></li>
+				<li><a href="ContactUs">Contactar</a></li>
+            </ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="Login">Log in / Sign up</a></li>
+				<li><a href="https://www.facebook.com/HealthyMix-2639600869447381/" class="fa fa-facebook"></a></li>
+				<li><a href="https://www.instagram.com/mixhealthy/" class="fa fa-instagram"></a></li>
+                <li><a href="Profile"><i class="fas fa-user-edit"></i></a></li>
+				<li><a href="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                <!--<i class="far fa-shopping-cart"></i>
+				<li><a href="Profile">Perfil</a></li>
+				<li><a href="Cart">Carrito</a></li>-->
+			</ul>
+	    </div>
+	</div>
+	</nav>
+
 
 <div class="container emp-profile">
             <form method="post">

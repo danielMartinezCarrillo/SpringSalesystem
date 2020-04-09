@@ -69,6 +69,8 @@ public class HomeController {
         session.close();
 */
         return "HealthyMIX";
+        //return "index";
+        //return "bootstrap";
     }
 
 }

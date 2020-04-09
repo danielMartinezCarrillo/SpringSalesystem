@@ -1,8 +1,12 @@
+.dropitems{
+  color: black;
+}
+
 /* Testimonos */
 #testimonials {
   height: 600px;
   background: url('') no-repeat center center/cover;
-  padding-top: 12px;
+  padding-top: 20px;
 }
 #testimonials1{
   height: auto;

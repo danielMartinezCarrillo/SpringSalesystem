@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "")
 public class BuyController {
 
-@RequestMapping(value = "/Buy", method = RequestMethod.GET)
-public String Buy() {
-    return "/Buy";
+@RequestMapping(value = "/Shop", method = RequestMethod.GET)
+public String Shop() {
+    return "/Shop";
 }
 
 @RequestMapping(value = "/Cart", method = RequestMethod.GET)

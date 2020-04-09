@@ -1,6 +1,15 @@
-.footer{
+/*.footer{
 text-align: center;
 color: red;
+}*/
+
+a.dropitems{
+  color: black;
+}
+
+.dropitems{
+  text-align: center;
+  margin-left: 10px;
 }
 
 .submit{
@@ -75,7 +84,14 @@ input[type=submit]:hover {
 }
 
 .image-containerAPP {
-  background-image: url("https://emerging-europe.com/wp-content/uploads/2018/11/bigstock-abstract-technology-background-250119211.jpg"); /* The image used - important! */
+  background-image: url("/images/appfondo.jpg"); /* The image used - important! */
+  background-size: cover; 
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 300px; /* Some height */
+}
+
+.image-containerSHOP {
+  background-image: url("https://wallpaperaccess.com/full/1624843.jpg"); /* The image used - important! */
   background-size: cover; 
   position: relative; /* Needed to position the cutout text in the middle of the image */
   height: 300px; /* Some height */
@@ -149,6 +165,7 @@ input[type=submit]:hover {
 }
 .subtitles{
   text-align:center;
+  margin-top: 25px;
 }
 .logo{
   float: right;
@@ -1556,7 +1573,8 @@ a.text-danger:focus {
 
 .bg-primary3{
   color: #fff;
-  background-color: #ed9209;
+  /*background-color: #ed9209;*/
+  background-color: #43a047;
 }
 
 
