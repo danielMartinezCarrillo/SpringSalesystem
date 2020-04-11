@@ -28,4 +28,9 @@ public String Profile() {
     return "/Profile";
 }
 
+@RequestMapping(value = "/PrivacyPolicy", method = RequestMethod.GET)
+public String PrivacyPolicy() {
+    return "/PrivacyPolicy";
+}
+
 }

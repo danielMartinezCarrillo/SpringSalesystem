@@ -28,4 +28,9 @@ public String RecoveryAccount() {
     return "/RecoveryAccount";
 }
 
+@RequestMapping(value = "/RecoveryAccountPassword", method = RequestMethod.GET)
+public String RecoveryAccountPassword() {
+    return "/RecoveryAccountPassword";
+}
+
 }

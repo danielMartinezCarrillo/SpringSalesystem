@@ -24,7 +24,7 @@ a.dropitems{
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 50%; /* Full width */
+  width: 53%; /* Full width */
   padding: 12px; /* Some padding */  
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -43,6 +43,21 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 250px;
+}
+
+input[type=submit1] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 120px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -1575,6 +1590,11 @@ a.text-danger:focus {
   color: #fff;
   /*background-color: #ed9209;*/
   background-color: #43a047;
+}
+
+.bg-primary4{
+  color: #fff;
+  background-color: #ed9209;
 }
 
 
