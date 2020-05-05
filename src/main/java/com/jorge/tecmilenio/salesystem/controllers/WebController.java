@@ -10,27 +10,22 @@ public class WebController {
 
 @RequestMapping(value = "/AboutUs", method = RequestMethod.GET)
 public String AboutUs() {
-    return "/AboutUs";
+    return "/web/AboutUs";
 }
 
 @RequestMapping(value = "/ContactUs", method = RequestMethod.GET)
 public String ContactUs() {
-    return "/ContactUs";
+    return "/web/ContactUs";
 }
 
 @RequestMapping(value = "/OurApp", method = RequestMethod.GET)
 public String OurApp() {
-    return "/OurApp";
-}
-
-@RequestMapping(value = "/Profile", method = RequestMethod.GET)
-public String Profile() {
-    return "/Profile";
+    return "/web/OurApp";
 }
 
 @RequestMapping(value = "/PrivacyPolicy", method = RequestMethod.GET)
 public String PrivacyPolicy() {
-    return "/PrivacyPolicy";
+    return "/web/PrivacyPolicy";
 }
 
 }

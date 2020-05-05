@@ -1,6 +1,6 @@
 package com.jorge.tecmilenio.salesystem.models;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.*;
 
@@ -12,118 +12,136 @@ import org.hibernate.annotations.UpdateTimestamp;
 public class Cliente {
 
     @Id
-    @Column(name = "IdCliente")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdCliente;
+    @Column(name = "Id_Cliente", updatable = false, nullable = false)
+    private Long Id_Cliente;
 
-    private String Nombre_del_cliente;
-    private String Apellido_Paterno;
-    private String Apellido_Materno;
-    private Integer Edad;
-    private Integer Número_orden;
-    private String Username;
-    private String Password;
-    private Integer Orden;
+    @Column(name = "nombre_del_cliente", nullable = false)
+    private String nombre_del_cliente;
+
+    @Column(name = "apellido_paterno", nullable = false)
+    private String apellido_paterno;
+
+    @Column(name = "apellido_materno", nullable = false)
+    private String apellido_materno;
+
+    @Column(name = "edad", nullable = false)
+    private Integer edad;
+
+    @Column(name = "numero_orden", nullable = false)
+    private Integer numero_orden;
+
+    @Column(name = "username", nullable = false)
+    private String username;
+
+    @Column(name = "password", nullable = false)
+    private String password;
+
+    @Column(name = "orden", nullable = true)
+    private Integer orden;
 
     @CreationTimestamp
-    private Date Orden_creada;
+    @Column(name = "orden_creada", updatable = false, nullable = true)
+    private Timestamp orden_creada;
 
     @UpdateTimestamp
-    private Date Orden_modificada;
+    @Column(name = "orden_modificada", updatable = false, nullable = true)
+    private Timestamp orden_modificada;
 
-    private Date Orden_cancelada;
+    @Column(name = "orden_cancelada")
+    private Timestamp orden_cancelada;
 
 
-    public Integer getId() {
-        return IdCliente;
+    public Long getId() {
+        return Id_Cliente;
     }
 
     public String getNombreDelCliente() {
-        return Nombre_del_cliente;
+        return nombre_del_cliente;
     }
 
     public void setNombreDelCliente(String nombre_del_cliente) {
-        Nombre_del_cliente = nombre_del_cliente;
+        this.nombre_del_cliente = nombre_del_cliente;
     }
 
     public String getApellidoPaterno() {
-        return Apellido_Paterno;
+        return apellido_paterno;
     }
 
-    public void setApellidoPaterno(String apellido_Paterno) {
-        Apellido_Paterno = apellido_Paterno;
+    public void setApellidoPaterno(String apellido_paterno) {
+        this.apellido_paterno = apellido_paterno;
     }
 
     public String getApellidoMaterno() {
-        return Apellido_Materno;
+        return apellido_materno;
     }
 
-    public void setApellidoMaterno(String apellido_Materno) {
-        Apellido_Materno = apellido_Materno;
+    public void setApellidoMaterno(String apellido_materno) {
+        this.apellido_materno = apellido_materno;
     }
 
-    public Integer getEdad() {
-        return Edad;
+    public Integer getedad() {
+        return edad;
     }
 
-    public void setEdad(Integer edad) {
-        Edad = edad;
+    public void setedad(Integer edad) {
+        this.edad = edad;
     }
 
     public Integer getNúmeroOrden() {
-        return Número_orden;
+        return numero_orden;
     }
 
-    public void setNúmeroOrden(Integer número_orden) {
-        Número_orden = número_orden;
+    public void setNúmeroOrden(Integer numero_orden) {
+        this.numero_orden = numero_orden;
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
     public Integer getOrden() {
-        return Orden;
+        return orden;
     }
 
-    public void setOrden(Integer orden) {
-        Orden = orden;
+    public void setorden(Integer orden) {
+        this.orden = orden;
     }
 
-    public Date getOrdenCreada() {
-        return Orden_creada;
+    public Timestamp getordenCreada() {
+        return orden_creada;
     }
 
-    public void setOrdenCreada(Date orden_creada) {
-        Orden_creada = orden_creada;
+    public void setOrdenCreada(Timestamp orden_creada) {
+        this.orden_creada = orden_creada;
     }
 
-    public Date getOrdenModificada() {
-        return Orden_modificada;
+    public Timestamp getOrdenModificada() {
+        return orden_modificada;
     }
 
-    public void setOrdenModificada(Date orden_modificada) {
-        Orden_modificada = orden_modificada;
+    public void setOrdenModificada(Timestamp orden_modificada) {
+        this.orden_modificada = orden_modificada;
     }
 
-    public Date getOrdenCancelada() {
-        return Orden_cancelada;
+    public Timestamp getOrdenCancelada() {
+        return orden_cancelada;
     }
 
-    public void setOrdenCancelada(Date orden_cancelada) {
-        Orden_cancelada = orden_cancelada;
+    public void setOrdenCancelada(Timestamp orden_cancelada) {
+        this.orden_cancelada = orden_cancelada;
     }
-    
+
 }

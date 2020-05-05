@@ -1,20 +1,25 @@
 package com.jorge.tecmilenio.salesystem.controllers;
 
-import com.jorge.tecmilenio.salesystem.db.HibernateSession;
-import com.jorge.tecmilenio.salesystem.models.Cliente;
-import com.jorge.tecmilenio.salesystem.models.Contacto;
+/*import com.jorge.tecmilenio.salesystem.db.HibernateSession;
+import com.jorge.tecmilenio.salesystem.models.Cliente;*/
+/*import com.jorge.tecmilenio.salesystem.models.Contacto;
 import com.jorge.tecmilenio.salesystem.models.Inventario;
 import com.jorge.tecmilenio.salesystem.models.Producto;
 import com.jorge.tecmilenio.salesystem.models.Proveedor;
-import com.jorge.tecmilenio.salesystem.models.Ventas;
+import com.jorge.tecmilenio.salesystem.models.Ventas;*/
+/*import com.jorge.tecmilenio.salesystem.services.ClienteService;*/
 
-import org.hibernate.Session;
-import org.hibernate.validator.internal.util.privilegedactions.GetAnnotationAttribute;
+/*import org.hibernate.Session;
+import org.hibernate.validator.internal.util.privilegedactions.GetAnnotationAttribute;*/
+/*import org.springframework.beans.factory.annotation.Autowired;*/
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+
+/*@Autowired
+private ClienteService service;*/
 
 @RequestMapping("/")
     public String HealthyMIX() {
@@ -23,7 +28,7 @@ public class HomeController {
         cliente.setNombreDelCliente("Antonio");
         cliente.setApellidoMaterno("Rios");
         cliente.setApellidoPaterno("Espinosa");
-        cliente.setEdad(23);
+        cliente.setedad(23);
         cliente.setNúmeroOrden(2);
         cliente.setUsername("AntonioRios");
         cliente.setPassword("1234567890");
@@ -67,10 +72,10 @@ public class HomeController {
         session.save(ventas);
         session.getTransaction().commit();
         session.close();
-*/
-        return "HealthyMIX";
-        //return "index";
-        //return "bootstrap";
+        */
+        /*service.save(cliente);*/
+
+        return "/web/HealthyMIX";
     }
 
 }

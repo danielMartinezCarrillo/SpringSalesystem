@@ -1,0 +1,12 @@
+
+input[type=submit] {
+    background-color: rgb(61, 167, 61);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 98px;
+}

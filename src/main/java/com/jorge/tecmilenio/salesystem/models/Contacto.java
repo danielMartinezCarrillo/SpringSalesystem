@@ -7,29 +7,32 @@ import javax.persistence.*;
 public class Contacto {
 
     @Id
-    @Column(name = "Id_Contacto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id_Contacto;
+    @Column(name = "Id_Contacto", updatable = false, nullable = false)
+    private Long Id_Contacto;
 
-    private Integer Teléfono;
-    private String Correo;
-    private String Rol;
+    @Column(name = "Nombre", nullable = false)
     private String Nombre;
 
-    public Integer getIdContacto() {
+    @Column(name = "Teléfono", nullable = false)
+    private Long Teléfono;
+
+    @Column(name = "Correo", nullable = false)
+    private String Correo;
+
+    @Column(name = "Rol", nullable = false)
+    private String Rol;
+
+    public Long getIdContacto() {
         return Id_Contacto;
     }
 
-    public void setIdContacto(Integer id_Contacto) {
-        Id_Contacto = id_Contacto;
-    }
-
-    public Integer getTeléfono() {
+    public Long getTeléfono() {
         return Teléfono;
     }
 
-    public void setTeléfono(Integer teléfono) {
-        Teléfono = teléfono;
+    public void setTeléfono(Long teléfono) {
+        this.Teléfono = teléfono;
     }
 
     public String getCorreo() {
@@ -37,7 +40,7 @@ public class Contacto {
     }
 
     public void setCorreo(String correo) {
-        Correo = correo;
+        this.Correo = correo;
     }
 
     public String getRol() {
@@ -45,7 +48,7 @@ public class Contacto {
     }
 
     public void setRol(String rol) {
-        Rol = rol;
+        this.Rol = rol;
     }
 
     public String getNombre() {
@@ -53,7 +56,7 @@ public class Contacto {
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.Nombre = nombre;
     }
 
 }

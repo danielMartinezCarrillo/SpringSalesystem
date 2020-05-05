@@ -7,24 +7,30 @@ import javax.persistence.*;
 public class Producto {
 
     @Id
-    @Column(name = "IdProducto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdProducto;
+    @Column(name = "Id_Producto", updatable = false, nullable = false)
+    private Integer Id_Producto;
 
-
+    @Column(name = "Nombre_Producto", nullable = false)
     private String Nombre_Producto;
+
+    @Column(name = "Descripción", nullable = false)
     private String Descripción;
+
+    @Column(name = "Unitp", nullable = false)
     private Float Unitp;
+
+    @Column(name = "Typo", nullable = true)
     private String Typo;
+
+    @Column(name = "UOM", nullable = false)
     private String UOM;
+
+    @Column(name = "Proveedor", nullable = false)
     private Integer Proveedor;
 
-    public Integer getIdProducto() {
-        return IdProducto;
-    }
-
-    public void setIdProducto(Integer idProducto) {
-        IdProducto = idProducto;
+    public Integer getId_Producto() {
+        return Id_Producto;
     }
 
     public String getNombreProducto() {
@@ -32,7 +38,7 @@ public class Producto {
     }
 
     public void setNombreProducto(String nombre_Producto) {
-        Nombre_Producto = nombre_Producto;
+        this.Nombre_Producto = nombre_Producto;
     }
 
     public String getDescripción() {
@@ -40,7 +46,7 @@ public class Producto {
     }
 
     public void setDescripción(String descripción) {
-        Descripción = descripción;
+        this.Descripción = descripción;
     }
 
     public Float getUnitp() {
@@ -48,7 +54,7 @@ public class Producto {
     }
 
     public void setUnitp(Float unitp) {
-        Unitp = unitp;
+        this.Unitp = unitp;
     }
 
     public String getTypo() {
@@ -56,7 +62,7 @@ public class Producto {
     }
 
     public void setTypo(String typo) {
-        Typo = typo;
+        this.Typo = typo;
     }
 
     public String getUOM() {
@@ -64,7 +70,7 @@ public class Producto {
     }
 
     public void setUOM(String uOM) {
-        UOM = uOM;
+        this.UOM = uOM;
     }
 
     public Integer getProveedor() {
@@ -72,7 +78,7 @@ public class Producto {
     }
 
     public void setProveedor(Integer proveedor) {
-        Proveedor = proveedor;
+        this.Proveedor = proveedor;
     }
 
     }

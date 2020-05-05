@@ -1,0 +1,260 @@
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .textTitle {
+          background-color: white;
+          color: black;
+          font-size: 10vw; /* Responsive font size */
+          font-weight: bold;
+          margin: 0 auto; /* Center the text container */
+          padding: 10px;
+          width: 50%;
+          text-align: center; /* Center text */
+          position: absolute; /* Position text */
+          top: 50%; /* Position text in the middle */
+          left: 50%; /* Position text in the middle */
+          transform: translate(-50%, -50%); /* Position text in the middle */
+          mix-blend-mode: screen; /* This makes the cutout text possible */
+        }
+
+        .image-containerFIT {
+          background-image: url("https://www.southyarragym.com/wp-content/uploads/revslider/fitness-slider-3-animated/5-layers-1000x350.jpg"); /* The image used - important! */
+          background-size: cover;
+          position: relative; /* Needed to position the cutout text in the middle of the image */
+          height: 300px; /* Some height */
+        }
+
+        .image-containerMEX {
+          background-image: url("https://mooreheating.com/wp-content/uploads/2017/03/shutterstock_100551715-1000x350.jpg"); /* The image used - important! */
+          background-size: cover;
+          position: relative; /* Needed to position the cutout text in the middle of the image */
+          height: 300px; /* Some height */
+        }
+        .image-containerMAX {
+          background-image: url("https://www.gob.mx/cms/uploads/article/main_image/52182/varias-frutas-deshidratadas.jpg"); /* The image used - important! */
+          background-size: cover;
+          position: relative; /* Needed to position the cutout text in the middle of the image */
+          height: 300px; /* Some height */
+        }
+
+        .row {
+          margin-right: 15px;
+          margin-left: 15px;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          /*background-color:rgb(255, 255, 255);*/
+          /*height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        .column1 {
+            background-color:rgb(247, 247, 247);
+        }
+
+        .column2 {
+          float: center;
+          width: 50%;
+          padding: 10px;
+          /*background-color:rgb(255, 255, 255);*/
+          /*height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .containerbutton {
+          position: relative;
+          filter: alpha(opacity=50);
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: all 1s;
+          -webkit-transition: all 1s;
+        }
+
+        button {
+          overflow: visible;
+        }
+        button,
+        select {
+          text-transform: none;
+        }
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+          -webkit-appearance: button;
+          cursor: pointer;
+        }
+        button[disabled],
+        html input[disabled] {
+          cursor: default;
+        }
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+          padding: 0;
+          border: 0;
+        }
+
+        .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%)
+        }
+
+        .containerbutton:hover .image {
+          opacity: 0.3;
+        }
+
+        .containerbutton:hover .middle {
+          opacity: 1;
+        }
+
+        .thumbnail {
+          display: block;
+          padding: 4px;
+          margin-bottom: 20px;
+          line-height: 1.42857143;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          -webkit-transition: border .2s ease-in-out;
+              -o-transition: border .2s ease-in-out;
+                  transition: border .2s ease-in-out;
+        }
+        .thumbnail > img,
+        .thumbnail a > img {
+          margin-right: auto;
+          margin-left: auto;
+        }
+        a.thumbnail:hover,
+        a.thumbnail:focus,
+        a.thumbnail.active {
+          border-color: #337ab7;
+        }
+        .thumbnail .caption {
+          padding: 9px;
+          color: #333;
+        }
+
+        .estilo {
+            text-align: center;
+        }
+
+        .estilo1 {
+            line-height: 25px;
+            text-align: justify;
+            text-justify: inter-word;
+            font: size 17px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .estilo2 {
+            line-height: 15px;
+            text-align: justify;
+            text-justify: inter-word;
+            font: size 17px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .tamañoletra {
+          font-size: 40px;
+        }
+
+        .alineacion {
+          text-align: center;
+        }
+
+        #testimonials {
+          height: 600px;
+          background: url('') no-repeat center center/cover;
+          padding-top: 20px;
+        }
+
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        #testimonials1{
+          height: auto;
+          background: url('https://i.blogs.es/4a525c/pexels-photo/450_1000.jpg')no-repeat center center/cover;
+          padding: 100px;
+        }
+
+        #testimonials .testimonial {
+          padding: 40px;
+          margin-bottom: 40px;
+          border-radius: 5px;
+          opacity: 0.9;
+        }
+        /* border-radius para obtener el efecto redondo de las imágenes */
+        #testimonials .testimonial img {
+          width: 300px;
+          float: left;
+          margin-right: 100px;
+          border-radius: 50%;
+        }
+
+        .marg2{
+          margin-bottom: 20px;
+        }
+
+        .marg3{
+          margin-bottom: 20px;
+        }
+
+        #testimonials h2{
+          /*text:bold;*/
+          text-align: center;
+          padding-bottom: 40px;
+        }
+
+        .colorMxR{
+          color: #256528;
+        }
+
+        .colorFR{
+          color: #2184B5;
+        }
+
+        .colorMnR {
+          /*color: #c11f1f;*/
+          color: #720000;
+        }
+
+        .bg-primary {
+          color: #fff;
+          background-color: #6c9cba;
+          width: 100%;
+          float: left;
+        }
+
+        .bg-primary2{
+          color: #fff;
+          background-color: #b81d1d;
+          width: 100%;
+          float: left;
+        }
+
+        .bg-primary3{
+          color: #fff;
+          /*background-color: #ed9209;*/
+          background-color: #43a047;
+          width: 100%;
+          float: left;
+        }

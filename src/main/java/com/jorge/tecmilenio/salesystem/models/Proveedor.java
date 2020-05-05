@@ -7,22 +7,24 @@ import javax.persistence.*;
 public class Proveedor {
 
     @Id
-    @Column(name = "IdProveedor")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdProveedor;
+    @Column(name = "Id_Proveedor", updatable = false, nullable = false)
+    private Integer Id_Proveedor;
 
-
+    @Column(name = "Nombre", nullable = false)
     private String Nombre;
+
+    @Column(name = "Dirección", nullable = true)
     private String Dirección;
+
+    @Column(name = "Ciudad", nullable = false)
     private String Ciudad;
+
+    @Column(name = "Contacto", nullable = true)
     private Integer Contacto;
 
-    public Integer getIdProveedor() {
-        return IdProveedor;
-    }
-
-    public void setIdProveedor(Integer idProveedor) {
-        IdProveedor = idProveedor;
+    public Integer getId_Proveedor() {
+        return Id_Proveedor;
     }
 
     public String getNombre() {
@@ -30,7 +32,7 @@ public class Proveedor {
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.Nombre = nombre;
     }
 
     public String getDirección() {
@@ -38,7 +40,7 @@ public class Proveedor {
     }
 
     public void setDirección(String dirección) {
-        Dirección = dirección;
+        this.Dirección = dirección;
     }
 
     public String getCiudad() {
@@ -46,7 +48,7 @@ public class Proveedor {
     }
 
     public void setCiudad(String ciudad) {
-        Ciudad = ciudad;
+        this.Ciudad = ciudad;
     }
 
     public Integer getContacto() {
@@ -54,7 +56,7 @@ public class Proveedor {
     }
 
     public void setContacto(Integer contacto) {
-        Contacto = contacto;
+        this.Contacto = contacto;
     }
 
 }

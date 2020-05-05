@@ -1,24 +1,24 @@
 USE 'mydb';
 
 CREATE TABLE `cliente` (
-  `IdCliente` int(8) NOT NULL AUTO_INCREMENT COMMENT 'Número id del cliente.',
-  `Nombre_del_cliente` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Nombre del cliente.',
-  `Apellido_Paterno` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Apellido Paterno.',
-  `Apellido_Materno` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Apellido Materno.',
-  `Edad` int(11) NOT NULL COMMENT 'Edad del usuario.',
-  `Número_orden` int(8) NOT NULL COMMENT 'Número (folio) del pedido u orden realizada.',
-  `Username` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Nombre de usuario del cliente.',
-  `Password` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Contraseña del usuario.',
-  `Orden` int(10) DEFAULT NULL,
-  `Orden_creada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de creación del pedido.',
-  `Orden_modificada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de modificación del pedido.',
-  `Orden_cancelada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de cancelación del pedido.',
-  PRIMARY KEY (`IdCliente`),
-  UNIQUE KEY `IdCliente_UNIQUE` (`IdCliente`),
-  UNIQUE KEY `Número_orden_UNIQUE` (`Número_orden`),
-  UNIQUE KEY `Username_UNIQUE` (`Username`),
-  KEY `Orden_idx` (`Orden`),
-  CONSTRAINT `Orden` FOREIGN KEY (`Orden`) REFERENCES `ventas` (`Id_orden`)
+  `Id_Cliente` int(8) NOT NULL AUTO_INCREMENT COMMENT 'Número id del cliente.',
+  `nombre_del_cliente` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Nombre del cliente.',
+  `apellido_paterno` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Apellido Paterno.',
+  `apellido_materno` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Apellido Materno.',
+  `edad` int(11) NOT NULL COMMENT 'edad del usuario.',
+  `numero_orden` int(8) NOT NULL COMMENT 'Número (folio) del pedido u orden realizada.',
+  `username` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Nombre de usuario del cliente.',
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Contraseña del usuario.',
+  `orden` int(10) DEFAULT NULL,
+  `orden_creada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de creación del pedido.',
+  `orden_modificada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de modificación del pedido.',
+  `orden_cancelada` timestamp NULL DEFAULT NULL COMMENT 'Fecha de cancelación del pedido.',
+  PRIMARY KEY (`Id_Cliente`),
+  UNIQUE KEY `Id_Cliente_UNIQUE` (`Id_Cliente`),
+  UNIQUE KEY `numero_orden_UNIQUE` (`numero_orden`),
+  UNIQUE KEY `Username_UNIQUE` (`username`),
+  KEY `orden_idx` (`orden`),
+  CONSTRAINT `orden` FOREIGN KEY (`orden`) REFERENCES `ventas` (`id_orden`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 
 CREATE TABLE `contacto` (
@@ -40,27 +40,27 @@ CREATE TABLE `inventario` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 
 CREATE TABLE `producto` (
-  `IdProducto` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id del Producto.',
+  `Id_Producto` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id del Producto.',
   `Nombre_Producto` varchar(45) NOT NULL COMMENT 'Id del Producto.',
   `Descripción` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Descripción del producto.',
   `Unitp` float NOT NULL COMMENT 'Precio por unidad del producto.',
   `Typo` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Tipo de producto (manufacturado, comprado, etc.).',
   `UOM` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Unidad de medida (pesos, dólares, etc.).',
   `Proveedor` int(10) NOT NULL COMMENT 'Numero ID del proveedor.',
-  PRIMARY KEY (`IdProducto`),
-  UNIQUE KEY `IdProduct_UNIQUE` (`IdProducto`),
+  PRIMARY KEY (`Id_Producto`),
+  UNIQUE KEY `IdProduct_UNIQUE` (`Id_Producto`),
   UNIQUE KEY `Nombre_Producto_UNIQUE` (`Nombre_Producto`),
-  KEY `IdProveedor_idx` (`Proveedor`)
+  KEY `Id_Proveedor_idx` (`Proveedor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 
 CREATE TABLE `proveedor` (
-  `IdProveedor` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id del proveedor.',
+  `Id_Proveedor` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Id del proveedor.',
   `Nombre` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Nombre del proveedor.',
   `Dirección` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Dirección del proveedor.',
   `Ciudad` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'País de origen del proveedor.',
   `Contacto` int(20) NULL COMMENT 'Número ID del proveedor.',
-  PRIMARY KEY (`IdProveedor`),
-  UNIQUE KEY `IdSupplier_UNIQUE` (`IdProveedor`),
+  PRIMARY KEY (`Id_Proveedor`),
+  UNIQUE KEY `IdSupplier_UNIQUE` (`Id_Proveedor`),
   KEY `Contacto_idx` (`Contacto`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 

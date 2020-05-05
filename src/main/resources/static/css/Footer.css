@@ -1,7 +1,7 @@
-/*
-** Style Simple Ecommerce Theme for Bootstrap 4
-** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
-*/
+
+.colorbod{
+    color: #f8f9fa!important;
+}
 .bloc_left_price {
     color: #c01508;
     text-align: center;
@@ -57,12 +57,4 @@ footer {
 }
 footer a {
     color: #f8f9fa!important
-}
-
-.a{
-text-align: center;
-}
-
-.b {
-text-align: right;
 }
