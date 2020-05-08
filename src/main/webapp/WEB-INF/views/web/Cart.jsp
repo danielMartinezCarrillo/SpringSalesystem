@@ -1,9 +1,11 @@
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-    <t:Menu>
-        <!--MENU TAG-->
-    </t:Menu>
+<t:Menu>
+  <jsp:body>
+
+  </jsp:body>
+</t:Menu>
 
     <body>
     <section class="jumbotron text-center">

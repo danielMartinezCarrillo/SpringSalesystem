@@ -178,7 +178,7 @@
         }
 
         #testimonials {
-          height: 600px;
+          /*height: 600px;*/
           background: url('') no-repeat center center/cover;
           padding-top: 20px;
         }
@@ -241,14 +241,12 @@
           color: #fff;
           background-color: #6c9cba;
           width: 100%;
-          float: left;
         }
 
         .bg-primary2{
           color: #fff;
           background-color: #b81d1d;
           width: 100%;
-          float: left;
         }
 
         .bg-primary3{
@@ -256,5 +254,4 @@
           /*background-color: #ed9209;*/
           background-color: #43a047;
           width: 100%;
-          float: left;
         }
